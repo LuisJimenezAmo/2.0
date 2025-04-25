@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    
+    img, picture, video, iframe {
+    display: block;
+    width: 100%;
+    /* height: initial; */
+    }
+    
+    form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body {
+        background-color: #FF6B3D;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+    }
+
+
+
+    .header2 {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        background-color: #FF6B3D;
+        align-items: baseline;
+        padding-top: 1rem;
+        
+    }
+    .header2__menu-item {
+        font-family: 'clashdisplay';
+        color: #444441;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        transition: color 0.3s;
+        
+    }
+    .header2__menu {
+        display: flex;
+        gap: 3rem;
+        padding-right: 2rem;        
+    }
+    
+    .header2__menu-item:hover {
+        color: #f6f8ec;
+    }
+
+    .header2__img {
+       width: 50%;
+       padding-left: 2rem;
+    }
+    
+
+
+    .main__actual {
+        
+        display: flex;
+        flex-direction: column;
+        
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .main__actual-texto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+        padding-inline: 2rem;
+    }
+    .main__actual-titulo {
+        font-family: 'clashdisplay';
+        color: #f6f8ec;
+        font-size: 4rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .main__actual-slide1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 60vh;
+        gap: 1rem;
+        padding-right: 2rem;
+        background-color: #f6f8ec;
+
+    }
+    .main__actual-slide2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 60vh;
+        gap: 1rem;
+        padding-left: 2rem;
+        background-color: #f6f8ec;
+        
+
+    }
+    .main__actual-portada {
+        height: 60vh;
+        object-fit: cover;
+    }
+    .main__actual-imagen {
+        object-fit: cover;
+    }
+    .main__actual-info1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-inline: 0.5rem;
+        text-align: start;
+    }
+    .main__actual-info2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-inline: 0.5rem;
+        text-align: start;
+    }
+    .main__actual-nombre {
+        font-family: 'clashdisplay';
+        font-size: 1.5rem;
+        color: #FF6B3D;
+    }
+    .main__actual-fecha {
+        font-family: 'clashdisplay';
+        font-size: 1rem;
+        color: #444441;
+        padding-top: 1rem;
+    }
+    .main__actual-desc {
+        font-family: 'poppin';
+        font-size: 0.8rem;
+        color: #444441;
+        padding-top: 0.5rem;
+    }
+    .main__futuro-contenedor {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        padding-inline: 2rem;
+    }
+    .main__futuro-present {
+        font-family: 'clashdisplay';
+        color: #f6f8ec;
+        font-size: 4.5rem;
+    }
+
+    .main__futuro-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 8rem;
+        padding-bottom: 3rem;
+    }
+    .main__futuro-img {
+        object-fit: cover;
+        height: 50vh;
+        padding-bottom: 1rem;
+    }
+    .main__futuro-titulo {
+        font-family: 'clashdisplay';
+        color: #f6f8ec;
+        font-size: 1.5rem;
+        text-align: end;
+    }
+    .main__futuro-fecha {
+        font-family: 'redhat';
+        color: #444441;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .main__futuro-info {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-inline: 2rem;
+        align-items: center;
+        padding-bottom: 1rem;
+        background-color: #444441;
+        padding-top: 1rem;
+    }
+    .footer__logo{
+        display: flex;
+        width: 50%;
+    }
+    .footer__menu {
+        display: flex;
+        font-family: 'redhat';
+        color: #f6f8ec;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .footer__social {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__direccion {
+        display: flex;
+    }
+    .footer__media {
+        display: flex;
+    }
+    .footer__media-img {
+        height: 1.2rem;
+    }
+    .footer__direccion-texto {
+        font-family: 'redhat';
+        color: #f6f8ec;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*FUENTES*/
+
+    @font-face {
+        font-family: 'clashdisplay';
+        src: url(../fuentes/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
+    }
+
+    @font-face {
+        font-family: 'redhat';
+        src: url(../fuentes/static/RedHatDisplay-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: 'poppin';
+        src: url(../fuentes/Poppins-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: 'redhat';
+        src: url(../fuentes/static/RedHatDisplay-Black.ttf);
+        font-weight: bolder;
+    }
+
+
+
+
+
+
+
+    /* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .header2__img {
+        width: 60%;
+    }
+    .header2__menu-item {
+        font-size: 1rem;
+    }
+    .header2__menu{
+        gap: 1rem;
+    }
+    .main__actual-titulo{
+        font-size: 3rem;
+    }
+    .main__actual-nombre{
+        font-size: 1.25rem;
+    }
+    .main__actual-fecha{
+        font-size: 0.8rem;
+        padding-top: 0.2rem;
+
+    }
+    .main__actual-desc{
+        font-size: 0.7rem;
+        padding-top: 0.2rem;
+        
+
+    }
+    .main__actual-slide1{
+        padding-right: 0.2rem;
+        gap: 0.2rem;
+    }
+    .main__actual-slide2{
+        padding-left: 0.2rem;
+        gap: 0.2rem;
+    }
+    .main__actual-info1{
+        padding-inline: 0.2rem;
+        justify-content: start;
+    }
+    .main__actual-info2{
+        padding-inline: 0.2rem;
+        justify-content: start;
+        text-align: end;
+    }
+    .main__futuro-present{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .main__futuro-titulo{
+        font-size: 1.25rem;
+    }
+    .main__futuro-fecha{
+        font-size: 0.8rem;
+        padding-top: 0.3rem;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    .footer__menu{
+        font-size: 0.9rem;
+    }
+    .footer__media-img{
+        height: 0.8rem;
+    }
+    .footer__direccion-texto{
+        font-size: 0.8rem;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    .header2{
+        display: flex;
+        align-items: center;
+    }
+    .header2__img{
+        width: 65%;
+        padding-left: 1rem;
+    }
+    .header2__menu-item{
+        font-size: 0.6rem;
+    }
+    .header2__menu {
+        gap: 0.3rem;
+        padding-right: 0.5rem;
+    }
+    .main__actual-titulo{
+        font-size: 2rem;
+    }
+    .main__actual-nombre{
+        font-size: 1rem;
+    }
+    .main__actual-fecha{
+        font-size: 0.7rem;
+        padding-top: 0.2rem;
+        
+
+    }
+    .main__actual-desc{
+        font-size: 0.6rem;
+        padding-top: 0.2rem;
+        height: 60%;
+        overflow-y: auto;        
+
+    }
+    .main__actual-slide1{
+        padding-right: 0.2rem;
+        gap: 0.2rem;
+        overflow: hidden;
+    }
+    .main__actual-slide2{
+        padding-left: 0.2rem;
+        gap: 0.2rem;
+        overflow: hidden;
+
+    }
+    .main__actual-info1{
+        padding-inline: 0.2rem;
+        justify-content: start;
+        
+    }
+    .main__actual-info2{
+        padding-inline: 0.2rem;
+        justify-content: start;
+        text-align: end;
+        
+    }
+    .main__futuro-present{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .main__futuro-titulo{
+        font-size: 0.9rem;
+    }
+    .main__futuro-fecha{
+        font-size: 0.7rem;
+        padding-top: 0.3rem;
+    }
+    .main__futuro-grid{
+        padding-inline: 1rem;
+    }
+    .main__futuro-img{
+        height: 30vh;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    .footer__menu{
+        font-size: 0.4rem;
+    }
+    .footer__media-img{
+        height: 0.4rem;
+    }
+    .footer__direccion-texto{
+        font-size: 0.3rem;
+        padding-bottom: 0.2rem;
+    }
+    .footer{
+        padding-inline: 0.2rem;
+    }
+
+
+}
+
+@media (min-width: 2560px) {
+    .header2__menu-item {
+        font-size: 3rem;
+    }
+    .header2__img{
+        width: 60%;
+    }
+    .main__actual-titulo{
+        font-size: 8rem;
+    }
+    .main__actual-nombre{
+        font-size: 4rem;
+    }
+    .main__actual-fecha{
+        font-size: 3rem;
+        padding-top: 1rem;
+        
+
+    }
+    .main__actual-desc{
+        font-size: 2rem;
+        padding-top: 1rem;
+
+        
+
+    }
+    .main__actual-slide1{
+        padding-right: 0.5rem;
+        gap: 1rem;
+        
+    }
+    .main__actual-slide2{
+        padding-left: 0.5rem;
+        gap: 1rem;
+        
+
+    }
+    .main__actual-info1{
+        padding-inline: 0.5rem;
+        justify-content: start;
+        
+    }
+    .main__actual-info2{
+        padding-inline: 0.5rem;
+        justify-content: start;
+        text-align: end;
+        
+    }
+    .main__futuro-present{
+        font-size: 8rem;
+        text-align: center;
+    }
+    .main__futuro-titulo{
+        font-size: 4rem;
+    }
+    .main__futuro-fecha{
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+    .main__futuro-grid{
+        padding-inline: 3rem;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    .footer__logo-img{
+        width: 50rem;
+    }
+    .footer__menu{
+        font-size: 2rem;
+    }
+    .footer__media-img{
+        height: 2rem;
+    }
+    .footer__direccion-texto{
+        font-size: 2rem;
+    }
+    .footer{
+        padding-inline: 2rem;
+    }
+    
+
+}

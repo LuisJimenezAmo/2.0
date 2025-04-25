@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/styles6.css">
+</head>
+<body>
+    <header class="header2">
+        <img src="../imagenes-pre/logo-blanca.svg" alt="" class="header2__img">
+        <nav class="header2__menu">
+            <a href="../html/expo.html" class="header__menu-enlace"><h1 class="header2__menu-item">EXPOSICIONES</h1></a>
+            <a href="../html/coleccion.html" class="header__menu-enlace"><h1 class="header2__menu-item">COLECCIÓN</h1></a>
+            <a href="../html/visita.html" class="header__menu-enlace"><h1 class="header2__menu-item">VISITA</h1></a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__intro">
+            <h1 class="main__intro-titulo">RESERVA TU VISITA</h1>
+        </div>
+        <hr class="main__linea">
+        <div class="main__formulario">
+            <form id="formulario" class="main__formulario-contenedor">
+                <p class="main__formulario-intro">Rellena este formulario para reservar tu entrada al Museo Coconut. Recuerda que todos los campos son obligatorios.</p>
+                <label class="main__formulario-nombre"><input class="main__formulario-item" type="text" id="name" label="Nombre" required placeholder="Nombre"></label>
+                <label class="main__formulario-apellidos"><input class="main__formulario-item" type="text" id="surname" label="Apellidos" required placeholder="Apellidos"></label>
+                <label class="main__formulario-email"><input class="main__formulario-item" type="email" id="email" label="Email" required placeholder="Email"></label>
+                <label class="main__formulario-telefono"><input class="main__formulario-item" type="tel" id="telefono" label="Teléfono" required placeholder="Teléfono"></label>
+                <label class="main__formulario-fecha"><input class="main__formulario-item" type="date" id="fecha" label="Fecha" required placeholder="Fecha"></label>
+                <label class="main__formulario-enviar"><input type="submit"></label>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="index.html" class="footer__logo-link">
+                <img src="../imagenes-pre/logo-blanca.svg" alt="logo" class="footer__logo-img">
+            </a>
+        </div>
+        <div class="footer__menu-container">
+            <nav>
+                <ul class="footer__menu">
+                    <li>
+                        <a href="">ABOUT US</a>
+                    </li>
+                    <li>/</li>
+                    <li>
+                        <a href="">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__social">
+            <div class="footer__direccion">
+                <p class="footer__direccion-texto">
+                    Museo de Arte Contemporáneo de Alicante
+                    Plaza de Santa María, 3
+                    03002- Alicante
+                </p>
+            </div>
+            <div class="footer__media">
+                <img src="../imagenes-pre/instagram-svgrepo-com.svg" alt="Instagram" class="footer__media-img">
+                <img src="../imagenes-pre/facebook-svgrepo-com.svg" alt="Facebook" class="footer__media-img">
+                <img src="../imagenes-pre/tiktok-svgrepo-com.svg" alt="TikTok" class="footer__media-img">
+                <img src="../imagenes-pre/spotify-162-svgrepo-com.svg" alt="Spotify" class="footer__media-img">
+                <img src="../imagenes-pre/youtube-168-svgrepo-com.svg" alt="Youtube" class="footer__media-img">
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    
+    img, picture, video, iframe {
+    display: block;
+    width: 100%;
+    /* height: initial; */
+    }
+    
+    form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body {
+        background-color: #FF6B3D;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+    }
+
+
+
+    .header2 {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        background-color: #FF6B3D;
+        align-items: baseline;
+        padding-top: 1rem;
+        
+    }
+    .header2__menu-item {
+        font-family: 'clashdisplay';
+        color: #444441;
+        font-size: 1.25rem;
+        font-weight: bolder;
+        transition: color 0.3s;
+        
+    }
+    .header2__menu {
+        display: flex;
+        gap: 3rem;
+        padding-right: 2rem;        
+    }
+    
+    .header2__menu-item:hover {
+        color: #f6f8ec;
+    }
+
+    .header2__img {
+       width: 50%;
+       padding-left: 2rem;
+    }
+
+
+
+
+    .main__colec {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-inline: 2rem;
+    }
+
+    .main__colec-intro {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        
+    }
+    .main__colec-titulo{
+        display: flex;
+        padding-bottom: 1rem;
+        
+    }
+    .main__titulo{
+        font-family: 'clashdisplay';
+        color: #f6f8ec;
+        font-size: 4rem;
+    }
+    .main__colec-contenido {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        
+    }
+    .main__intro {
+        font-family: 'poppin';
+        font-size: 1.2rem;
+        color: #444441;
+    }
+    .main__gal {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__gal-intro {
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .main__gal-titulo {
+        font-family: 'clashdisplay';
+        color: #f6f8ec;
+        font-size: 4rem;
+    }
+    .main__gal-galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .a {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+        width: 60%;
+        padding-bottom: 4rem;
+    }
+    .a1 {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+        width: 39%;
+    }
+    .a2 {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+    .b2 {
+        width: 78%;
+        overflow: hidden;
+           
+    }
+    .c {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .c1 {
+        font-family: 'clashdisplay';
+        font-size: 2rem;
+        color: #f6f8ec;
+    }
+    .c2 {
+        font-family: 'clashdisplay';
+        font-size: 1.2rem;
+        font-weight: bolder;
+        color: #444441;
+    }
+    .c3 {
+        font-family: 'poppin';
+        font-size: 1rem;
+        color: #f6f8ec;
+        font-weight: bolder;
+    }
+    .main__exposiciones-lineasup {
+        height: 0.2rem;
+        background-color: #f6f8ec;
+    }
+
+
+
+
+
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-inline: 2rem;
+        align-items: center;
+        padding-bottom: 1rem;
+        background-color: #444441;
+        padding-top: 1rem;
+    }
+    .footer__logo{
+        display: flex;
+        width: 50%;
+    }
+    .footer__menu {
+        display: flex;
+        font-family: 'redhat';
+        color: #f6f8ec;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .footer__social {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__direccion {
+        display: flex;
+    }
+    .footer__media {
+        display: flex;
+    }
+    .footer__media-img {
+        height: 1.2rem;
+    }
+    .footer__direccion-texto {
+        font-family: 'redhat';
+        color: #f6f8ec;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+
+
+
+        /* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .header2__img {
+        width: 60%;
+    }
+    .header2__menu-item {
+        font-size: 1rem;
+    }
+    .header2__menu{
+        gap: 1rem;
+    }
+    .main__titulo{
+        font-size: 3rem;
+    }
+    .main__intro{
+        font-size: 1rem;
+    }
+    .main__gal-titulo{
+        font-size: 3rem;
+    }
+    .c1{
+        font-size: 1.5rem;
+        padding-top: 0.7rem;
+    }
+    .c2{
+        font-size: 1rem;
+    }
+    .c3{
+        font-size: 0.6rem;
+        padding-bottom: 1rem;
+    }
+    
+    .footer__logo{
+        width: 100%;
+    }
+    .footer__menu{
+        font-size: 0.9rem;
+    }
+    .footer__media-img{
+        height: 0.8rem;
+    }
+    .footer__direccion-texto{
+        font-size: 0.8rem;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    .header2{
+        display: flex;
+        align-items: center;
+    }
+    .header2__img{
+        width: 65%;
+        padding-left: 1rem;
+    }
+    .header2__menu-item{
+        font-size: 0.5rem;
+    }
+    .header2__menu {
+        gap: 0.3rem;
+        padding-right: 0.5rem;
+    }
+    .main__titulo{
+        font-size: 2rem;
+    }
+    .main__intro{
+        font-size: 0.7rem;
+    }
+    .main__gal-titulo{
+        font-size: 2rem;
+    }
+    .c1{
+        font-size: 1rem;
+        padding-top: 0.4rem;
+    }
+    .c2{
+        font-size: 0.7rem;
+    }
+    .c3{
+        font-size: 0.4rem;
+        padding-bottom: 1rem;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    .footer__menu{
+        font-size: 0.4rem;
+    }
+    .footer__media-img{
+        height: 0.4rem;
+    }
+    .footer__direccion-texto{
+        font-size: 0.3rem;
+        padding-bottom: 0.2rem;
+    }
+    .footer{
+        padding-inline: 0.2rem;
+    }
+
+
+}
+
+@media (min-width: 2560px) {
+    .header2__menu-item {
+        font-size: 3rem;
+    }
+    .header2__img{
+        width: 60%;
+    }
+    .main__titulo{
+        font-size: 8rem;
+    }
+    .main__intro{
+        font-size: 2rem;
+    }
+    .main__gal-titulo{
+        font-size: 8rem;
+    }
+    .c1{
+        font-size: 4rem;
+        padding-top: 0.4rem;
+    }
+    .c2{
+        font-size: 3rem;
+    }
+    .c3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    .footer__logo-img{
+        width: 50rem;
+    }
+    .footer__menu{
+        font-size: 2rem;
+    }
+    .footer__media-img{
+        height: 2rem;
+    }
+    .footer__direccion-texto{
+        font-size: 2rem;
+    }
+    .footer{
+        padding-inline: 2rem;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*FUENTES*/
+
+    @font-face {
+        font-family: 'clashdisplay';
+        src: url(../fuentes/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
+    }
+
+    @font-face {
+        font-family: 'redhat';
+        src: url(../fuentes/static/RedHatDisplay-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: 'poppin';
+        src: url(../fuentes/Poppins-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: 'redhat';
+        src: url(../fuentes/static/RedHatDisplay-Black.ttf);
+        font-weight: bolder;
+    }
