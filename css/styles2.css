@@ -38,7 +38,12 @@
     }
     
     :root {
-    font-size: 100%;
+        font-size: 100%;
+        --color-principal: #FF6B3D;
+        --color-secundario: #f6f8ec;
+        --color-texto: #444441;
+        --fuente-principal: 'ClashDisplay', sans-serif;
+        --fuente-secundaria: 'Poppins', sans-serif;    
     }
     
     html {
@@ -49,7 +54,7 @@
     }
     
     body {
-        background-color: #FF6B3D;
+        background-color: var(--color-principal);
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -64,33 +69,46 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 1rem;
-        background-color: #FF6B3D;
+        background-color: var(--color-principal);
         align-items: baseline;
-        padding-top: 1rem;
+        padding-block: 1rem;
+        padding-inline: 2rem;
         
     }
-    .header2__menu-item {
+    .header__menu-enlace {
         font-family: 'clashdisplay';
-        color: #444441;
+        color: var(--color-texto);
         font-size: 1.25rem;
         font-weight: bolder;
-        transition: color 0.3s;
+        transition: color 0.3s, transform 0.2s;
         
     }
     .header2__menu {
         display: flex;
-        gap: 3rem;
-        padding-right: 2rem;        
+        gap:1.5rem;      
     }
     
-    .header2__menu-item:hover {
-        color: #f6f8ec;
+    .header__menu-enlace:hover {
+        color: var(--color-secundario);
+    }
+    .header__menu-enlace:active {
+        scale: 0.95;
     }
 
     .header2__img {
-       width: 50%;
-       padding-left: 2rem;
+       height: 2rem;
     }
+    .header2__hamburguesa {
+        display: none;
+        font-size: 2rem;
+        color: var(--color-texto);
+
+
+    }
+    .header2__movil {
+        display: none;
+    }
+
     
 
 
@@ -112,7 +130,7 @@
     }
     .main__actual-titulo {
         font-family: 'clashdisplay';
-        color: #f6f8ec;
+        color: var(--color-secundario);
         font-size: 4rem;
     }
     .container {
@@ -127,7 +145,7 @@
         height: 60vh;
         gap: 1rem;
         padding-right: 2rem;
-        background-color: #f6f8ec;
+        background-color: var(--color-secundario);
 
     }
     .main__actual-slide2 {
@@ -136,7 +154,7 @@
         height: 60vh;
         gap: 1rem;
         padding-left: 2rem;
-        background-color: #f6f8ec;
+        background-color: var(--color-secundario);
         
 
     }
@@ -164,18 +182,18 @@
     .main__actual-nombre {
         font-family: 'clashdisplay';
         font-size: 1.5rem;
-        color: #FF6B3D;
+        color: var(--color-principal);
     }
     .main__actual-fecha {
         font-family: 'clashdisplay';
         font-size: 1rem;
-        color: #444441;
+        color: var(--color-texto);
         padding-top: 1rem;
     }
     .main__actual-desc {
         font-family: 'poppin';
         font-size: 0.8rem;
-        color: #444441;
+        color: var(--color-texto);
         padding-top: 0.5rem;
     }
     .main__futuro-contenedor {
@@ -186,7 +204,7 @@
     }
     .main__futuro-present {
         font-family: 'clashdisplay';
-        color: #f6f8ec;
+        color: var(--color-secundario);
         font-size: 4.5rem;
     }
 
@@ -200,16 +218,17 @@
         object-fit: cover;
         height: 50vh;
         padding-bottom: 1rem;
+        width: 100%;
     }
     .main__futuro-titulo {
         font-family: 'clashdisplay';
-        color: #f6f8ec;
+        color: var(--color-secundario);
         font-size: 1.5rem;
         text-align: end;
     }
     .main__futuro-fecha {
         font-family: 'redhat';
-        color: #444441;
+        color: var(--color-texto);
         font-size: 1rem;
         font-weight: bold;
     }
@@ -225,7 +244,7 @@
         padding-inline: 2rem;
         align-items: center;
         padding-bottom: 1rem;
-        background-color: #444441;
+        background-color: var(--color-texto);
         padding-top: 1rem;
     }
     .footer__logo{
@@ -235,7 +254,7 @@
     .footer__menu {
         display: flex;
         font-family: 'redhat';
-        color: #f6f8ec;
+        color: var(--color-secundario);
         font-size: 1rem;
         justify-content: center;
     }
@@ -254,7 +273,7 @@
     }
     .footer__direccion-texto {
         font-family: 'redhat';
-        color: #f6f8ec;
+        color: var(--color-secundario);
         font-size: 0.8rem;
         text-align: center;
         padding-bottom: 1rem;
@@ -311,7 +330,49 @@
         font-size: 1rem;
     }
     .header2__menu{
-        gap: 1rem;
+        display: none;
+    }
+    .header2__hamburguesa {
+        display: flex;
+        justify-content: end;
+    }
+    .header2__movil {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f6f8ec;
+        align-items: center;
+        justify-content: start;
+        z-index: 100;
+        font-size: 2rem;
+        font-family: "clashdisplay";
+        color: #444441;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        gap: 5rem;
+
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    .header2__movil-cerrar {
+        padding-bottom: 5rem;
+    }
+    .header2__movil.activo {
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    .header2__movil.cerrando {
+        visibility: visible;
+        transform: translateX(100%);
+    }
+    .header2__movil-cerrar {
+        background: none;
+        font-size: 2.5rem;
+        color: #444441;
+        align-self: flex-end;
+        margin-right: 2rem;
     }
     .main__actual-titulo{
         font-size: 3rem;
@@ -381,15 +442,62 @@
         align-items: center;
     }
     .header2__img{
-        width: 65%;
-        padding-left: 1rem;
+        width: 60%;
     }
     .header2__menu-item{
         font-size: 0.6rem;
     }
-    .header2__menu {
-        gap: 0.3rem;
-        padding-right: 0.5rem;
+    .header2__menu{
+        display: none;
+    }
+    .header2__hamburguesa {
+        display: flex;
+        justify-content: end;
+        font-size: 1rem;
+    }
+    .header__movil-enlace {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header2__movil {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: #f6f8ec;
+        align-items: center;
+        justify-content: start;
+        z-index: 100;
+        font-size: 2rem;
+        font-family: "clashdisplay";
+        color: #444441;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        gap: 5rem;
+
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    .header2__movil-cerrar {
+        padding-bottom: 5rem;
+    }
+    .header2__movil.activo {
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    .header2__movil.cerrando {
+        visibility: visible;
+        transform: translateX(100%);
+    }
+    .header2__movil-cerrar {
+        background: none;
+        font-size: 2.5rem;
+        color: #444441;
+        align-self: flex-end;
+        margin-right: 2rem;
     }
     .main__actual-titulo{
         font-size: 2rem;
@@ -470,11 +578,11 @@
 }
 
 @media (min-width: 2560px) {
-    .header2__menu-item {
-        font-size: 3rem;
+    .header__menu-enlace {
+        font-size: 2rem;
     }
     .header2__img{
-        width: 60%;
+        width: 100%;
     }
     .main__actual-titulo{
         font-size: 8rem;

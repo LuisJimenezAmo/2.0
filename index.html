@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/hamburguesa.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header2">
+        <a href="index.html" class="header2__logo" title="Inicio">
+            <picture>
+                <source srcset="../imagenes-pre/logo-naranja.svg" type="image/webp">
+                <img src="../imagenes-pre/logo-naranja.svg" alt="Logo Museo Coconut" class="header2__img">
+            </picture>
+        </a>
+        <button class="header2__hamburguesa" aria-label="Abrir menú" title="Menú hamburguesa">
+            ☰
+        </button>
+        <nav class="header2__movil">
+            <button class="header2__movil-cerrar" aria-label="Cerrar menú" title="Cerrar">✖</button>
+
+            <a href="about.html" class="header__movil-enlace" title="Sobre Museo Coconut">SOBRE NOSOTROS</a>
+            <a href="contacto.html" class="header__movil-enlace" title="Contacto">CONTACTO</a>
+        </nav>
+        <nav class="header2__menu">
+            <a href="about.html" class="header__menu-enlace" title="Sobre Museo Coconut">SOBRE NOSOTROS</a>
+            <a href="contacto.html" class="header__menu-enlace" title="Contacto">CONTACTO</a>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- abro un section para la bienvenida a la página -->
+        <section class="main__bienvenido">
+            <div class="main__bienvenido-intro">
+                <div class="main__bienvenido-izq">
+                    <h2 class="main__bienvenido-titulo">BIENVENIDO</h2>
+                    <p class="main__bienvenido-texto">El Museo Coconut ofrece un amplio programa de exposiciones inspiradoras además de una amplia colección de trabajos que recorren los dos ultimos siglos del arte alicantino</p>
+                </div>
+                <div class="main__bienvenido-dcha">
+                    <a href="expo.html" class="main__bienvenido-enlace" title="Exposiciones"><span><img src="../FINAL/flechaderecha.svg" alt="" class="main__bienvenido-icono"></span>Exposiciones</a>
+                    <a href="coleccion.html" class="main__bienvenido-enlace" title="Colección"><span><img src="../FINAL/flechaderecha.svg" alt="" class="main__bienvenido-icono"></span>Colección</a>
+                    <a href="visita.html" class="main__bienvenido-enlace" title="Visita"><span><img src="../FINAL/flechaderecha.svg" alt="" class="main__bienvenido-icono"></span>Reserva tu entrada</a>
+                </div>
+            </div>
+            <div class="main__bienvenido-grid">
+                <!-- dejo alt vacío por tratarse de imágenes decorativas -->
+               <img src="../FINAL/1.jpg" alt="" loading="lazy" class="main__bienvenido-item1">
+               <img src="../FINAL/2.jpg" alt="" loading="lazy" class="main__bienvenido-item2">
+               <img src="../FINAL/3.jpg" alt="" loading="lazy" class="main__bienvenido-item3">
+               <img src="../FINAL/4.jpg" alt="" loading="lazy" class="main__bienvenido-item4">
+               <img src="../FINAL/5.jpg" alt="" loading="lazy" class="main__bienvenido-item5">
+               <img src="../FINAL/6.jpg" alt="" loading="lazy" class="main__bienvenido-item6">
+               <img src="../FINAL/7.jpg" alt="" loading="lazy" class="main__bienvenido-item7"> 
+            </div>
+        </section>
+        <section class="main__exposiciones">
+            <!-- en esta sección irán las exposiciones actuales del museo -->
+            <hr class="main__exposiciones-lineasup">
+            <div class="main__exposiciones-slider">
+                <div class="main__exposiciones-track">
+                    <div class="main__exposiciones-cabecera">
+                        <h1 class="main__exposiciones-titulo">EXPOSICIONES</h1>
+                        <p class="main__exposiciones-texto">El Museo Coconut ofrece un amplio programa de exposiciones inspiradoras además de una amplia colección de trabajos que recorren los dos ultimos siglos del arte alicantino</p>
+                        <div class="main__exposiciones-controlador">
+                            <button class="main__exposiciones-esfera" title="Izquierda"></button>
+                            <button class="main__exposiciones-esfera" title="Derecha"></button>
+                        </div>
+                    </div>
+                    <div class="main__exposiciones-recorrer">
+                        <figure class="main__exposiciones-item">
+                            <picture>
+                                <source srcset="expo-presente/webp/una-hoja.webp" type="image/webp">
+                                <source srcset="expo-presente/jpg/una-hoja.jpg" type="image/jpg">
+                                <img src="expo-presente/jpg/una-hoja.jpg" alt="Una hoja en lugar del ojo" loading="lazy" class="main__exposiciones-img">
+                            </picture>
+                            <figcaption class="main__exposiciones-pie">
+                                <h2 class="main__exposiciones-pie1">DANIEL STEEGMANN MANGRANÉ</h2>
+                                <h3 class="main__exposiciones-pie2">UNA HOJA EN LUGAR DEL OJO</h3>
+                                <p class="main__exposiciones-fechas">15.12.24 — 15.02.26</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="main__exposiciones-item">
+                            <picture>
+                                <source srcset="expo-presente/webp/sueño.webp" type="image/webp">
+                                <source srcset="expo-presente/jpg/sueño.jpg" type="image/jpg">
+                                <img src="expo-presente/jpg/sueño.jpg" alt="Sueño máquina de pájaro" loading="lazy" class="main__exposiciones-img">
+                            </picture>
+                            <figcaption class="main__exposiciones-pie">
+                                <h2 class="main__exposiciones-pie1">TERESA SOLAR ABBOUD</h2>
+                                <h3 class="main__exposiciones-pie2">SUEÑO MÁQUINA DE PÁJARO</h3>
+                                <p class="main__exposiciones-fechas">08.11.24 — 19.05.26</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="main__exposiciones-item">
+                            <picture>
+                                <source srcset="expo-presente/webp/mentira.webp" type="image/webp">
+                                <source srcset="expo-presente/jpg/mentira.jpg" type="image/jpg">
+                                <img src="expo-presente/jpg/mentira.jpg" alt="La gran mentira de la muerte" loading="lazy" class="main__exposiciones-img">
+                            </picture>
+                            <figcaption class="main__exposiciones-pie">
+                                <h2 class="main__exposiciones-pie1">WU TSANG</h2>
+                                <h3 class="main__exposiciones-pie2">LA GRAN MENTIRA DE LA MUERTE</h3>
+                                <p class="main__exposiciones-fechas">15.01.25 — 15.02.26</p>
+                            </figcaption>
+                        </figure>     
+                        <figure class="main__exposiciones-item">
+                            <picture>
+                                <source srcset="expo-presente/webp/contra.webp" type="image/webp">
+                                <source srcset="expo-presente/jpg/contra.jpeg" type="image/jpg">
+                                <img src="expo-presente/jpg/contra.jpeg" alt="[Contra]Panorama" loading="lazy" class="main__exposiciones-img">
+                            </picture>
+                            <figcaption class="main__exposiciones-pie">
+                                <h2 class="main__exposiciones-pie1">MIQUEL COLL</h2>
+                                <h3 class="main__exposiciones-pie2">[CONTRA]PANORAMA</h3>
+                                <p class="main__exposiciones-fechas">08.04.25 — 15.09.26</p>
+                            </figcaption>
+                        </figure>            
+                    </div>                
+                </div>
+            </div>
+            <hr class="main__exposiciones-lineainf">
+        </section>
+        <section class="main__colecciones">
+            <!-- por último un section para las colecciones permanentes del museo -->
+            <div class="main__colecciones-galeria">
+                <figure>
+                    <picture>
+                        <source srcset="colecciones/webp/juana-frances.webp" type="image/webp">
+                        <source srcset="colecciones/jpg/juana-frances.jpg" type="image/jpg">
+                        <img src="colecciones/jpg/juana-frances.jpg" alt="Juana Francés" loading="lazy" class="main__colecciones-img">
+                    </picture>
+                    <figcaption>
+                        <h2 class="main__colecciones-titulo">COLECCIÓN JUANA FRANCÉS</h2>                        
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="colecciones/webp/siglo-xx.webp" type="image/webp">
+                        <source srcset="colecciones/jpg/siglo-xx.jpg" type="image/jpg">
+                        <img src="colecciones/jpg/siglo-xx.jpg" alt="Siglo XX" loading="lazy" class="main__colecciones-img">
+                    </picture>
+                    <figcaption>
+                        <h2 class="main__colecciones-titulo">COLECCIÓN ARTE SIGLO XX</h2>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="colecciones/webp/michael-jenkins.webp" type="image/webp">
+                        <source srcset="colecciones/jpg/michael-jenkins.jpeg" type="image/jpg">
+                        <img src="colecciones/jpg/michael-jenkins.jpeg" alt="Michael Jenkins" loading="lazy" class="main__colecciones-img">
+                    </picture>
+                    <figcaption>
+                        <h2 class="main__colecciones-titulo">COLECCIÓN MICHAEL JENKINS</h2>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="colecciones/webp/eusebio-sempere.webp" type="image/webp">
+                        <source srcset="colecciones/jpg/eusebio-sempere.jpg" type="image/jpg">
+                        <img src="colecciones/jpg/eusebio-sempere.jpg" alt="Eusebio Sempere" loading="lazy" class="main__colecciones-img">
+                    </picture>
+                    <figcaption>
+                        <h2 class="main__colecciones-titulo">COLECCIÓN EUSEBIO SEMPERE</h2>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="colecciones/webp/slide6.webp" type="image/webp">
+                        <source srcset="colecciones/jpg/slide6.jpg" type="image/jpg">
+                        <img src="colecciones/jpg/slide6.jpg" alt="Fundación Mediterráneo" loading="lazy" class="main__colecciones-img">
+                    </picture>
+                    <figcaption>
+                        <h2 class="main__colecciones-titulo">COLECCIÓN FUNDACIÓN MEDITERRÁNEO</h2>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="colecciones/webp/javier-romero.webp" type="image/webp">
+                        <source srcset="colecciones/jpg/javier-romero.jpg" type="image/jpg">
+                        <img src="colecciones/jpg/javier-romero.jpg" alt="Javier Romero" loading="lazy" class="main__colecciones-img">
+                    </picture>
+                    <figcaption>
+                        <h2 class="main__colecciones-titulo">COLECCIÓN JAVIER ROMERO</h2>
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="main__colecciones-info">
+                <h1 class="main__colecciones-texto">COLECCIONES</h1>
+                <p class="main__colecciones-subtexto">El MACA cuenta con unos variados fondos que, estructurados en tres colecciones, recorren las principales corrientes del arte del siglo XX, representadas por sus más genuinos protagonistas. Fondos que abarcan piezas como pinturas, esculturas, dibujos, obra gráfica, serigrafías, litografías, grabados y obras mixtas adosadas. No todas las obras se encuentran expuestas. Aunque se trata de una exposición permanente, parte de sus fondos debe renovarse por razones de conservación, lo que conforma una exposición siempre cambiante.</p>
+            </div>
+        </section>
+    </main>    
+    <script src="../js/carrusel.js"></script>
+</body>
+</html>
